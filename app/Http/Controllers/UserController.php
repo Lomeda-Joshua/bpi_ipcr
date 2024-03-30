@@ -11,4 +11,16 @@ class UserController extends Controller
         return view('app_users.user.dashboard');
     }
 
+    public function yourIpcr(){
+        return view('app_users.user.youripcr');
+    }
+
+    public function profile(){
+        return view('app_users.user.profile');
+    }
+
+    public function ipcr(){
+        return view('app_users.user.ipcr');
+    }
+
 }

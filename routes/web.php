@@ -22,8 +22,12 @@ Route::middleware('auth')->group(function () {
 });
 
 
-Route::get('/user-dashboard', [UserController::class, 'index'])->name('user.index');
-
+Route::controller(UserController::class)->group(function(){
+    Route::get('/user-dashboard', 'index')->name('user.index');
+    Route::get('/user-your-ipcr', 'yourIpcr')->name('user.youripcr_index');
+    Route::get('/user-profile', 'profile')->name('user.profile');
+    Route::get('/user-ipcr', 'ipcr')->name('user.ipcr');
+});
 
 
 require __DIR__.'/auth.php';
