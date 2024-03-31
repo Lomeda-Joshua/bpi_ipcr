@@ -38,6 +38,10 @@
 
                 <div class="container-fluid">
                     {{ $slot }}
+
+                    <div class="py-6 px-6 text-center">
+                        <p class="mb-0 fs-4">Bureau of Plant Industry | IPCR & OPCR Application @ @php echo date('Y'); @endphp</p>
+                    </div>    
                 </div>
 
 
